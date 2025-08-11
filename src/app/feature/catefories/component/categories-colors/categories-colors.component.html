@@ -1,1 +1,14 @@
-<p>categories-colors works!</p>
+<section class="flex flex-col gap-4 w-full">
+    <mat-divider class="opacity-50"></mat-divider>
+
+        <div class="flex flex-wrap items-center justify-center px-4 gap-4 ">
+            @for (category of categories(); track category.id) {
+                <span class="flex itens-center justify-center px-4 py-2 
+                rounded-md text-center text-white font-semibold select-none
+                opacity-80 hover:opacity-100" 
+                    [style.backgroundColor]="category.color">
+                {{category.name}}
+                </span>
+            }
+        </div>
+</section>

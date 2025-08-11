@@ -1,3 +1,8 @@
-<!-- categories-list  -->
+<div class="flex flex-col justify-between itens-center h-full W-full">
 
-<!-- categories-colors -->
+     @if (categories$ | async) {
+         <app-category-list/>
+         <app-categories-colors/>
+     }
+    
+</div>
